@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: bebasneue;
+    src: url(bebasneue.ttf);
+}
+
+@font-face {
+    font-family: cocogoose;
+    src: url(cocogoose.ttf);
+}
+
+body{
+    font-family: sans-serif;
+    background: #333;
+    color: #fff;
+    
+}
+
+h2{
+    text-align: center;
+    font-family: cocogoose;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 1.9em;
+
+}
+
+.col{
+    float: left;
+    width: 33%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.price-box{
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+}
+
+.price-box .header{
+    background: #111;
+    color: #fff;
+    font-size: 35px;
+    font-family: bebasneue;
+}
+
+    .price-box .header.header-green{
+        background: #4caf50;
+    }
+
+    .price-box li{
+        padding: 20px;
+        border-bottom: 20px solid #eee;
+        text-align: center;
+    }
+
+    strong{
+        font-family: bebasneue;
+        font-size: 1.5em;
+    }
+
+    .btn{
+        background-color: #4caf50;
+        border: none;
+        color:#fff;
+        font-family: cocogoose;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .btn:hover{
+        opacity: 0.7;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        background: #333;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    footer p{
+        margin-top: 3%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        color: #000000;
+    }
+    
+    footer a{
+        color:#777;
+        text-decoration: none;
+    } 
+
+    @media (max-width:760px){
+        .col{
+            width: 100%;
+        }
+
+        footer{
+            font-size: 0.6em;
+        }
+    }
